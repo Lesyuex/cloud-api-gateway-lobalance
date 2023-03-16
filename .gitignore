@@ -1,0 +1,3 @@
+# 项目排除路径
+/common-component/common-web/target/
+/gateway-service/target/
