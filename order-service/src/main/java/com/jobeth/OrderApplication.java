@@ -5,17 +5,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>
- * Created with IntelliJ IDEA in 2023/3/17 0:24
- * Description: 类
+ * Created with IntelliJ IDEA in 2023/3/17 10:24
  * <p>
  *
  * @author Jobeth
  */
 @SpringBootApplication
-public class GatewayApplication {
+public class OrderApplication {
     public static void main(String[] args) {
-
-        SpringApplication.run(GatewayApplication.class,args);
-        System.err.println("网关启动完成");
+        SpringApplication.run(OrderApplication.class, args);
     }
 }

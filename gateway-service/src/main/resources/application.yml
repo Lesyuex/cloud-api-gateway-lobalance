@@ -3,3 +3,18 @@ server:
 spring:
   application:
     name: gateway
+  cloud:
+    nacos:
+      discovery:
+        locator:
+          # 开启从注册中心动态创建路由的功能，利用微服务名进行路由
+          enabled: true
+        # 注册中心地址
+        server-addr: localhost:8848
+    gateway:
+      # 网关路由规则
+      routes:
+        - id: order_service
+          uri: lb://order-service
+          predicates:
+            - Path=/order/**
